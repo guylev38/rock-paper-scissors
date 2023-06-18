@@ -3,31 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="title">
-      <h1>Rock Paper Scissors</h1>
-      <h3>Choose Your Weapon !</h3>
-    </div>
-    <div class="main-container">
-      <button>Rock</button>
-      <button>Paper</button>
-      <button>Scissors</button>
-    </div>
-
+  <div class="title">
+    <h1><strong>Rock Paper Scissors</strong></h1>
+    <h3>Choose Your Weapon!</h3>
+  </div>
+  <div class="content">
     <div class="results">
       <div class="human">
-        <h2>human</h2>
-        <h3>score</h3>
+        <h2>
+          <img src="https://emojiguide.com/wp-content/uploads/platform/google/41373.png" alt="">
+        </h2>
+        <h3 id="human-score">0</h3>
       </div>
       <div class="computer">
-        <h2>computer</h2>
-        <h3>score</h3>
+        <h2>
+          <img src="https://em-content.zobj.net/thumbs/120/microsoft/319/desktop-computer_1f5a5-fe0f.png" alt="">
+        </h2>
+        <h3 id="computer-score">0</h3>
       </div>
     </div>
-    <footer>
-      Made by Guy Levitski | <a href="https://www.github.com/guylev38">Github</a>
-    </footer>
+
+    <div class="buttons">
+      <button id="rock">
+        <img src="./Images/rock.png" alt="">
+      </button>
+
+      <button id="paper">
+        <img src="./Images/paper.png" alt="">
+      </button>
+
+      <button id="scissors">
+        <img src="./Images/scissors.png" alt="">
+      </button>
+    </div>
+
+  </div>
+  <footer>
+    Made by Guy Levitski | <a href="https://www.github.com/guylev38">Github</a>
+  </footer>
 </body>
 </html>
