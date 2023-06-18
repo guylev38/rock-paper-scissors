@@ -3,7 +3,7 @@
 
 :root{
   --header-color: #212122;
-  --background-color: #3d3635;
+  --background-color: #212122;
 }
 
 *{
@@ -30,6 +30,8 @@ body{
   background-color: var(--header-color);
   color: white;
   width: 100%;
+  font-size: 24px;
+  gap: 10px;
 }
 
 .content{
@@ -54,6 +56,11 @@ body{
   border-radius: 10px;
 }
 
+#human-score,
+#computer-score{
+  font-size: 24px
+}
+
 img{
   height: 100px;
   width: 100px;
@@ -61,7 +68,22 @@ img{
 
 .buttons{
   margin: 20px;
+  display: flex;
+  gap: 20px;
 }
+
+button{
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--background-color);
+}
+
+button:hover{
+  box-shadow: 0px 0px 20px orange;
+  transition-duration: 500ms;
+}
+
 
 a{
   text-decoration: none;
