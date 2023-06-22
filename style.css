@@ -4,6 +4,7 @@
 :root{
   --header-color: #212122;
   --background-color: #212122;
+  --orange-color: #F7951F;
 }
 
 *{
@@ -17,6 +18,7 @@ body{
   align-items: center;
   background-color: var(--background-color);
   color: white;
+  justify-content: space-between; 
 }
 
 .title{
@@ -31,7 +33,7 @@ body{
   color: white;
   width: 100%;
   font-size: 24px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .content{
@@ -43,17 +45,25 @@ body{
 
 .results{
   display: flex;
-  gap: 20px;
+  gap: 50px;
   margin: 20px;
+  align-items: center;
 }
 
 .results > div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   padding: 20px;
   border-radius: 10px;
+  gap: 20px;
+}
+
+#human-move,
+#computer-move{
+  height: 80px;
+  width: 80px;
 }
 
 #human-score,
@@ -80,12 +90,15 @@ button{
 }
 
 button:hover{
-  box-shadow: 0px 0px 20px orange;
+  box-shadow: 0px 0px 20px var(--orange-color);
   transition-duration: 500ms;
 }
 
-
 a{
   text-decoration: none;
-  color: orange;
+  color: var(--orange-color);
+}
+
+footer{
+  margin: 20px;
 }
